@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Helper</title>
+</head>
+<body>
+    <h1>Welcome, please choose an option to upload your completed math problem</h1>
+    <button id="upload-button">Upload Image</button>
+    <button id="camera-button">Take a Picture</button>
+    <input type="file" id="upload" accept="image/*" style="display: none;">
+    <input type="file" id="camera" accept="image/*" capture="camera" style="display: none;">
+    <div id="crop-container" style="display: none;">
+        <img id="uploaded-image" alt="Uploaded Image">
+        <button id="crop-button">Crop Image</button>
+    </div>
+    <div id="language-selection" style="display: none;">
+        <label for="language">Choose language: </label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </div>
+    <div id="result" style="display: none;"></div>
+    <div id="question" style="display: none;"></div>
+    <script src="script.js"></script>
+</body>
+</html>
